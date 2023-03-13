@@ -15,6 +15,7 @@ app.get('/jokes', async (req, res, next) => {
     if(tags){
       where.tags={[Op.like]: `%${tags}%`} 
     }
+    //conditional statement
     if(content){
       where.joke ={[Op.like]:`%${content}%`}
     }
