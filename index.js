@@ -6,6 +6,7 @@ const {Sequelize}= require("sequelize")
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
+//begining of request
 
 app.get('/jokes', async (req, res, next) => {
   try {
